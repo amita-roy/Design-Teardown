@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   font-size: 10px;
-  color: white;
 }
 
 nav {
@@ -54,4 +53,9 @@ nav button img {
   margin-left: 0.4em;
   width: 30px;
   height: 30px;
+}
+
+.lastest-article{
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
