@@ -5,6 +5,11 @@
   font-size: 10px;
 }
 
+.lastest-article,
+.sect-2-art-content > p:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 nav {
   height: 100px;
   background-color: rgb(88, 88, 88);
@@ -89,7 +94,7 @@ nav button:active {
 .lastest-article {
   display: grid;
   grid-template-columns: auto auto auto;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
 }
 
 .article-item {
@@ -107,10 +112,6 @@ nav button:active {
 
 .item-2 {
   background-color: rgb(85, 85, 85);
-}
-
-.lastest-article {
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .article-item ul {
@@ -157,6 +158,12 @@ nav button:active {
   color: #fff;
 }
 
+.arrow {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 220px;
+}
+
 .article-item img {
   max-width: 70px;
   max-height: 70px;
@@ -189,4 +196,37 @@ nav button:active {
   font-style: italic;
   font-size: 16px;
   font-weight: 400;
+}
+
+.article-section-2 {
+  display: flex;
+  padding-top: 70px;
+}
+
+.sect-2-art-content > p:nth-child(1) {
+  text-transform: uppercase;
+}
+
+.sect-2-art-content > p:nth-child(2) {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.sect-2-art-content h3 {
+  padding: 18px 0;
+  font-size: 18px;
+  color: #777;
+  line-height: 20px;
+}
+
+.sect-2-art-content > p:nth-child(4) {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.arrow2 {
+  font-size: 40px;
+  color: #121;
 }
