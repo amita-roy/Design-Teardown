@@ -55,7 +55,19 @@ nav button img {
   height: 30px;
 }
 
-.lastest-article{
+.lastest-article {
   display: grid;
   grid-template-columns: auto auto auto;
+  height: calc(100vh - 100px);
+}
+
+.article-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-item img {
+  width: 200px;
+  height: 200px;
 }
