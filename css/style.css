@@ -95,6 +95,7 @@ nav button:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .item-1,
@@ -106,7 +107,46 @@ nav button:active {
   background-color: rgb(85, 85, 85);
 }
 
+.lastest-article {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.article-item li {
+  display: inline;
+  padding-right: 15px;
+}
+
+.article-item h1 > a {
+  font-size: 48px;
+  line-height: 57px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-item h1 > a:visited {
+  color: #fff;
+}
+
 .article-item img {
-  width: 200px;
-  height: 200px;
+  max-width: 85px;
+  max-height: 85px;
+  border: 3px solid #fff;
+}
+
+.article-item section {
+  display: flex;
+  align-items: center;
+}
+
+.latest-article-section h3 {
+  line-height: 36px;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.latest-article-section span {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
 }
