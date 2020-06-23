@@ -1,46 +1,57 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
-    color: white
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  color: white;
 }
 
 nav {
-    height: 100px;
-    background-color: rgb(58, 58, 58);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  height: 100px;
+  background-color: rgb(68, 68, 68);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 nav a {
-    font-size: 20px;
-    text-decoration: none;
+  padding: 14px 15px;
+  background-color: transparent;
+  border-radius: 6px;
+}
+
+nav a,
+button {
+  font-size: 20px;
+  text-decoration: none;
 }
 
 nav .logo {
-    height: 7.2em;
-    margin-top: 30px;;
-  
+  height: 7.2em;
+  margin-top: 30px;
 }
 
 nav button {
-    background-color: rgb(124, 124, 124);
-    padding: 8px 15px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
-    border-radius: 6px;
-    box-shadow: ;
+  background-color: rgb(124, 124, 124);
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px 4px rgba(36, 36, 36, 0.7);
+}
+
+nav a:not(:last-of-type):hover {
+  background-color: rgb(124, 124, 124);
+}
+
+nav button:hover {
+  background-color: rgb(102, 102, 102);
 }
 
 nav button img {
-
-    margin-left: .4em;
-    width: 30px;
-    height: 30px;
-    
+  margin-left: 0.4em;
+  width: 30px;
+  height: 30px;
 }
