@@ -7,22 +7,28 @@
 
 nav {
   height: 100px;
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(88, 88, 88);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 30px;
 }
 
-nav a {
-  padding: 14px 15px;
+.nav-links {
+  padding: 13px 15px;
   background-color: transparent;
   border-radius: 6px;
+}
+
+.nav-links:hover {
+  background-color: rgb(124, 124, 124);
 }
 
 nav a,
 button {
   font-size: 20px;
   text-decoration: none;
+  color: white;
 }
 
 nav .logo {
@@ -37,22 +43,45 @@ nav button {
   align-items: center;
   justify-content: space-between;
   border: none;
+  color: white;
   border-radius: 6px;
-  box-shadow: 0 4px 4px 4px rgba(36, 36, 36, 0.7);
-}
-
-nav a:not(:last-of-type):hover {
-  background-color: rgb(124, 124, 124);
+  box-shadow: 0 4px 4px 4px rgba(68, 68, 68, 0.7);
 }
 
 nav button:hover {
-  background-color: rgb(102, 102, 102);
+  background-color: rgb(109, 109, 109);
 }
 
 nav button img {
   margin-left: 0.4em;
   width: 30px;
   height: 30px;
+}
+
+nav .serchbar {
+  width: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.serchbar input {
+  width: 100%;
+  padding: 12px 12px 14px 48px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.serchbar input:active,
+.serchbar input:focus,
+nav button:focus,
+nav button:active {
+  outline: none;
+}
+.serchbar i {
+  font-size: 22px;
+  margin-right: -40px;
+  z-index: 10;
+  color: rgb(78, 78, 78);
 }
 
 .lastest-article {
@@ -63,8 +92,18 @@ nav button img {
 
 .article-item {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.item-1,
+.item-3 {
+  background-color: rgb(68, 68, 68);
+}
+
+.item-2 {
+  background-color: rgb(85, 85, 85);
 }
 
 .article-item img {
