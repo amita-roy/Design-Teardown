@@ -407,7 +407,8 @@ nav button:active {
   width: 50%;
 }
 
-.more-links {
+.more-links,
+.featured-book {
   padding: 40px;
 }
 
@@ -416,10 +417,10 @@ nav button:active {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto auto auto;
   grid-template-areas:
-    top-author top-author
-    author1 author2
-    author3 author4
-    author5 author6;
+    "top-author top-author"
+    "author1 author2"
+    "author3 author4"
+    "author5 author6";
 }
 
 .top-author {
@@ -447,4 +448,44 @@ nav button:active {
 }
 .author-6 {
   grid-area: author6;
+}
+
+.more-links img {
+  border: 5px solid #000;
+  max-width: 75px;
+  max-height: 75px;
+}
+
+.more-links .top-author-img {
+  width: 240px;
+  height: 240px;
+}
+
+.featured-book {
+  background-color: rgb(49, 49, 49);
+  color: #fff;
+}
+
+.featured-book h3 {
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.featured-book h1 {
+  font-size: 4.7rem;
+  line-height: 5.7rem;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.featured-book p {
+  max-width: 65%;
+  font-size: 2.2rem;
+  line-height: 3.7rem;
+  font-weight: 400;
+  padding-bottom: 50px;
 }
