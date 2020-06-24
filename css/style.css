@@ -406,3 +406,45 @@ nav button:active {
 .shipping-cat {
   width: 50%;
 }
+
+.more-links {
+  padding: 40px;
+}
+
+.more-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    top-author top-author
+    author1 author2
+    author3 author4
+    author5 author6;
+}
+
+.top-author {
+  grid-area: top-author;
+}
+
+.author-1 {
+  grid-area: author1;
+}
+
+.author-2 {
+  grid-area: author2;
+}
+
+.author-3 {
+  grid-area: author3;
+}
+
+.author-4 {
+  grid-area: author4;
+}
+
+.author-5 {
+  grid-area: author5;
+}
+.author-6 {
+  grid-area: author6;
+}
