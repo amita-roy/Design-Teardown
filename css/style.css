@@ -93,7 +93,7 @@ nav button:active {
 
 .lastest-article {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   min-height: calc(100vh - 100px);
 }
 
@@ -101,6 +101,7 @@ nav button:active {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   color: #fff;
   padding: 200px 100px 0;
 }
@@ -112,6 +113,23 @@ nav button:active {
 
 .item-2 {
   background-color: rgb(85, 85, 85);
+  position: relative;
+}
+
+.featured-articles__teaser {
+  top: 3%;
+  position: absolute;
+  text-align: center;
+}
+
+.featured-articles__teaser span {
+  background-color: #fff;
+  padding: 10px 20px;
+  line-height: 1.5em;
+  color: #121;
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: -1px;
 }
 
 .article-item ul {
@@ -161,7 +179,8 @@ nav button:active {
 .arrow {
   color: #fff;
   font-size: 40px;
-  margin-top: 220px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .article-item img {
