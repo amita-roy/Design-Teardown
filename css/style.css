@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .lastest-article,
@@ -98,6 +99,13 @@ nav button:active {
   min-height: calc(100vh - 100px);
 }
 
+.lastest-article h1 span {
+  margin-left: 15px;
+  font-size: 1.4rem;
+  color: rgb(224, 224, 224);
+  font-weight: 400;
+}
+
 .article-item {
   display: flex;
   flex-direction: column;
@@ -115,6 +123,12 @@ nav button:active {
 .item-2 {
   background-color: rgb(85, 85, 85);
   position: relative;
+}
+
+.call-to-action {
+  width: 65%;
+  top: 4%;
+  position: absolute;
 }
 
 .featured-articles__teaser {
@@ -135,15 +149,15 @@ nav button:active {
 
 .article-item ul {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
   margin-top: 60px;
+  list-style: none;
 }
 
 .article-item li {
-  display: inline;
-  margin-right: auto;
+  margin-right: 30px;
 }
 
 .article-item li a {
@@ -236,10 +250,11 @@ nav button:active {
 }
 
 .sect-2-top > p:nth-child(2) {
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 36px;
   font-weight: 700;
   padding-top: 10px;
+  color: rgb(68, 68, 68);
 }
 
 .sect-2-top h3 {
@@ -270,7 +285,7 @@ nav button:active {
 
 .feature-ad {
   padding: 20px;
-  background-color: #121;
+  background-color: rgb(49, 49, 49);
   border-radius: 10px;
   width: 800px;
   display: flex;
@@ -302,7 +317,7 @@ nav button:active {
   line-height: 3rem;
 }
 
-.feature-ad button {
+.common-btn {
   background-color: #f6f3f2;
   color: rgb(58, 57, 57);
   padding: 15px 30px;
@@ -343,4 +358,51 @@ nav button:active {
   text-transform: uppercase;
   padding-bottom: 10px;
   border-bottom: 3px solid #121;
+}
+
+.shipping-info {
+  height: 100vh;
+  background-color: rgb(49, 49, 49);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.shipping-info header p {
+  font-size: 1.7rem;
+  margin-bottom: 50px;
+}
+
+.shipping-info h1 {
+  margin-bottom: 50px;
+  line-height: 6rem;
+}
+
+.shipping-info h1 a {
+  color: rgb(233, 233, 233);
+  font-size: 4.5rem;
+}
+
+.shipping-info .description {
+  font-size: 2.2rem;
+  width: 900px;
+  font-weight: 300;
+  line-height: 3.5rem;
+  margin-bottom: 50px;
+}
+
+.description strong {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.shipping-info button {
+  margin-bottom: 60px;
+}
+
+.shipping-cat {
+  width: 50%;
 }
