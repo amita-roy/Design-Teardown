@@ -561,3 +561,16 @@ nav button:active {
   font-weight: 400;
   padding-bottom: 50px;
 }
+
+.smashing-guide {
+  padding: 50px 60px;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.grid-card {
+}
