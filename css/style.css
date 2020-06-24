@@ -6,6 +6,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: #f6f3f2;
+}
+
 .lastest-article,
 .sect-2-top > p:nth-child(2),
 .next-page a {
@@ -80,6 +84,8 @@ nav .serchbar {
 
 .serchbar input:active,
 .serchbar input:focus,
+.common-btn:active,
+.common-btn:focus,
 nav button:focus,
 nav button:active {
   outline: none;
@@ -324,6 +330,7 @@ nav button:active {
   border-radius: 10px;
   font-weight: bold;
   font-size: 2.5rem;
+  border: none;
 }
 
 .feature-ad small {
@@ -361,7 +368,7 @@ nav button:active {
 }
 
 .shipping-info {
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(49, 49, 49);
   padding: 40px;
   display: flex;
@@ -409,13 +416,15 @@ nav button:active {
 
 .more-links,
 .featured-book {
-  padding: 40px;
+  padding: 60px 40px;
 }
 
 .more-links-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: repeat(4, 250px);
+  row-gap: 35px;
+  column-gap: 30px;
   grid-template-areas:
     "top-author top-author"
     "author1 author2"
@@ -452,18 +461,81 @@ nav button:active {
 
 .more-links img {
   border: 5px solid #000;
+  border-radius: 10px;
+  transform: rotateZ(-15deg);
+  transition: transform 0.2s ease-in-out;
+  margin-right: 30px;
+}
+
+.more-links img:hover {
+  transform: rotateZ(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.more-links img:not(.top-author-img) {
   max-width: 75px;
   max-height: 75px;
 }
 
 .more-links .top-author-img {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
+}
+
+.top-author,
+.author-1,
+.author-2,
+.author-3,
+.author-4,
+.author-5,
+.author-6 {
+  display: flex;
+}
+
+.more-links-grid h1 {
+  font-size: 3.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.top-author p {
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+  margin-top: 30px;
+}
+
+.right-content h4,
+.right-content h4 a {
+  font-size: 1.8rem;
+  color: rgb(110, 110, 110);
+}
+
+.author-info {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: rgb(82, 82, 82);
 }
 
 .featured-book {
   background-color: rgb(49, 49, 49);
   color: #fff;
+  position: relative;
+}
+
+.feature-book-img {
+  width: 256px;
+  height: 373px;
+  position: absolute;
+  right: 150px;
+  top: -100px;
+  transform: rotateZ(-15deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-book-img:hover {
+  transform: rotateZ(0deg);
+  transition: transform 0.3s ease-in-out;
 }
 
 .featured-book h3 {
