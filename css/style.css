@@ -177,16 +177,6 @@ nav button:active {
   color: rgb(39, 39, 39);
 }
 
-.article-tag-count {
-  color: rgb(202, 202, 202);
-  background-color: rgb(202, 202, 202);
-  font-weight: 500;
-  font-size: 1.2rem;
-  position: relative;
-  top: -0.3rem;
-  left: 0.4rem;
-}
-
 .article-item h1 > a {
   font-size: 48px;
   line-height: 57px;
@@ -653,10 +643,12 @@ nav button:active {
 .newsletter-contianer {
   background-color: rgb (89, 89, 89);
   padding: 60px;
+  height: auto;
 }
 
 .newsletter-sec {
   margin: 0 auto;
+  height: 850px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -667,11 +659,14 @@ nav button:active {
   border-radius: 15px;
 }
 
-/* .newsletter-sec img {
-  width: 100%;
-  max-width: 450px;
-  border-radius: 50%;
-} */
+.newsletter-img {
+  width: 40%;
+  height: 30%;
+  background-color: lightgray;
+  border: none;
+  border-radius: 100%;
+  margin-bottom: 60px;
+}
 
 .newsletter-sec h1 {
   font-size: 4rem;
@@ -699,13 +694,15 @@ nav button:active {
 .email form input {
   padding: 25px 20px;
   border: none;
-  background-color: lightgray;
+  background-image: linear-gradient(
+    to right,
+    rgb(187, 187, 187) 70%,
+    rgb(116, 116, 116) 70%
+  );
   margin-bottom: 40px;
   border-radius: 10px;
 }
 
-.email form span {
-}
 .email-bottom-text {
   align-self: center;
   width: 65%;
