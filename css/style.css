@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,9 +12,34 @@ body {
   background-color: #f6f3f2;
 }
 
+h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
 nav {
   height: 100px;
-  background-color: rgb(88, 88, 88);
+  background-color: rgb(58, 58, 58);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,18 +48,13 @@ nav {
 
 .nav-links {
   padding: 13px 15px;
-  background-color: rgb(124, 124, 124);
+  background-color: gray;
   border-radius: 6px;
 }
 
-/* 
-.nav-links:hover {
-  background-color: rgb(124, 124, 124);
-} */
-
 nav a,
 button {
-  font-size: 20px;
+  font-size: 2rem;
   text-decoration: none;
   color: transparent;
 }
@@ -43,7 +65,7 @@ nav .logo {
 }
 
 nav button {
-  background-color: rgb(124, 124, 124);
+  background-color: gray;
   padding: 8px 15px;
   display: flex;
   align-items: center;
@@ -51,12 +73,8 @@ nav button {
   border: none;
   color: transparent;
   border-radius: 6px;
-  box-shadow: 0 4px 4px 4px rgba(68, 68, 68, 0.7);
+  box-shadow: 0 4px 4px 4px rgb(27, 27, 27);
 }
-
-/* nav button:hover {
-  background-color: rgb(109, 109, 109);
-} */
 
 nav button img {
   margin-left: 0.4em;
@@ -78,6 +96,39 @@ nav .serchbar {
   color: white;
 }
 
+.common-btn {
+  color: rgb(136, 136, 136);
+  background-color: rgb(136, 136, 136);
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 2.5rem;
+  border: none;
+}
+
+.shipping-info button {
+  margin-bottom: 60px;
+}
+
+.email,
+.email form,
+.email form input {
+  width: 100%;
+}
+
+.email form input {
+  padding: 25px 20px;
+  border: none;
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(187, 187, 187) 70%,
+      rgb(116, 116, 116) 70%
+    );
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
 .serchbar input:active,
 .serchbar input:focus,
 .common-btn:active,
@@ -86,6 +137,7 @@ nav button:focus,
 nav button:active {
   outline: none;
 }
+
 .serchbar i {
   font-size: 22px;
   margin-right: -40px;
@@ -100,6 +152,16 @@ nav button:active {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   min-height: calc(100vh - 100px);
+}
+
+.featured-articles__teaser span {
+  background-color: #fff;
+  padding: 10px 20px;
+  line-height: 1.5em;
+  color: #121;
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: -1px;
 }
 
 .lastest-article h1 span {
@@ -141,16 +203,6 @@ nav button:active {
   text-align: center;
 }
 
-.featured-articles__teaser span {
-  background-color: #fff;
-  padding: 10px 20px;
-  line-height: 1.5em;
-  color: #121;
-  font-size: 3.5rem;
-  text-align: center;
-  letter-spacing: -1px;
-}
-
 .article-item ul {
   display: flex;
   flex-wrap: wrap;
@@ -162,6 +214,18 @@ nav button:active {
 
 .article-item li {
   margin-right: 30px;
+}
+
+.next-page a {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+  font-size: 1.7rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #121;
+  background-color: rgb(70, 70, 70);
 }
 
 .article-item li a {
@@ -195,18 +259,6 @@ nav button:active {
   width: 100px;
 }
 
-/* .latest-article-section img {
-  max-width: 70px;
-  max-height: 70px;
-  border: 5px solid #fff;
-  border-radius: 8px;
-  object-fit: cover;
-  display: block;
-  transform: rotateZ(-15deg);
-  transition: transform 0.2s ease-out;
-  background-color: lightgray;
-} */
-
 .img-placeholder {
   width: 70px;
   height: 70px;
@@ -216,7 +268,6 @@ nav button:active {
   transform: rotateZ(-15deg);
 }
 
-/* .article-item img:hover, */
 .img-placeholder:hover {
   transform: rotateZ(0deg);
 }
@@ -227,18 +278,22 @@ nav button:active {
   margin-bottom: 30px;
 }
 
+footer h3 {
+  font-size: 1.6rem;
+  line-height: 4.3rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  display: inline-block;
+  background-color: rgb(223, 223, 223);
+  color: rgb(223, 223, 223);
+}
+
 .latest-article-section h3 {
   line-height: 36px;
   font-size: 22px;
   font-weight: 700;
   margin-left: 20px;
   background-color: white;
-}
-
-.latest-article-section span {
-  font-style: italic;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .article-section-2 {
@@ -254,6 +309,55 @@ nav button:active {
   justify-content: space-between;
   padding-left: 40px;
 }
+
+footer > p {
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 400;
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+.feature-ad h1,
+.feature-ad p {
+  margin-top: -40px;
+}
+
+.feature-ad p {
+  font-size: 2rem;
+  text-align: center;
+  width: 550px;
+  line-height: 3rem;
+  background-color: rgb(212, 212, 212);
+  color: rgb(212, 212, 212);
+}
+
+.top-author p {
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+  margin-top: 30px;
+}
+
+.featured-book p {
+  max-width: 65%;
+  font-size: 2.2rem;
+  line-height: 3.7rem;
+  font-weight: 400;
+  padding-bottom: 50px;
+  background-color: rgb(177, 177, 177);
+  color: rgb(177, 177, 177);
+  margin-bottom: 40px;
+}
+
+.shipping-info header p {
+  font-size: 1.7rem;
+  margin-bottom: 50px;
+  color: rgb(200, 200, 200);
+  background-color: rgb(200, 200, 200);
+  display: inline-block;
+}
+
 .sect-2-top > p:nth-child(1) {
   text-transform: uppercase;
   background-color: rgb(148, 148, 148);
@@ -324,40 +428,9 @@ nav button:active {
   background-color: lightgray;
 }
 
-/* .feature-ad img {
-  width: 30%;
-  height: auto;
-} */
-
 .feature-ad h1 {
-  font-size: 4rem;
   background-color: rgb(255, 255, 255);
   color: rgb(255, 255, 255);
-}
-
-.feature-ad h1,
-.feature-ad p {
-  margin-top: -40px;
-}
-
-.feature-ad p {
-  font-size: 2rem;
-  text-align: center;
-  width: 550px;
-  line-height: 3rem;
-  background-color: rgb(212, 212, 212);
-  color: rgb(212, 212, 212);
-}
-
-.common-btn {
-  background-color: #f6f3f2;
-  color: rgb(136, 136, 136);
-  background-color: rgb(136, 136, 136);
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 2.5rem;
-  border: none;
 }
 
 .feature-ad small {
@@ -386,18 +459,6 @@ nav button:active {
   padding: 100px 0;
 }
 
-.next-page a {
-  text-decoration: none;
-  color: rgb(70, 70, 70);
-  font-size: 1.7rem;
-  line-height: 1.9rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #121;
-  background-color: rgb(70, 70, 70);
-}
-
 .shipping-info {
   min-height: 100vh;
   background-color: rgb(49, 49, 49);
@@ -409,19 +470,16 @@ nav button:active {
   text-align: center;
 }
 
-.shipping-info header p {
-  font-size: 1.7rem;
-  margin-bottom: 50px;
-}
-
 .shipping-info h1 {
   margin-bottom: 50px;
   line-height: 6rem;
+  color: whitesmoke;
 }
 
 .shipping-info h1 a {
-  color: rgb(233, 233, 233);
+  color: whitesmoke;
   font-size: 4.5rem;
+  background-color: whitesmoke;
 }
 
 .shipping-info .description {
@@ -430,19 +488,15 @@ nav button:active {
   font-weight: 300;
   line-height: 3.5rem;
   margin-bottom: 50px;
-}
-
-.description strong {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.shipping-info button {
-  margin-bottom: 60px;
+  color: rgb(185, 185, 185);
+  background-color: rgb(185, 185, 185);
 }
 
 .shipping-cat {
-  width: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: lightgrey;
+  border-radius: 100%;
 }
 
 .more-links,
@@ -455,7 +509,7 @@ nav button:active {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 250px);
   row-gap: 35px;
-  column-gap: 30px;
+  column-gap: 20px;
   grid-template-areas:
     "top-author top-author"
     "author1 author2"
@@ -486,31 +540,33 @@ nav button:active {
 .author-5 {
   grid-area: author5;
 }
+
 .author-6 {
   grid-area: author6;
 }
 
-.more-links img {
-  border: 5px solid #000;
-  border-radius: 10px;
+.author-img-placeholder {
+  width: 70px;
+  height: 70px;
+  border: 5px solid rgb(128, 128, 128);
+  border-radius: 8px;
+  background-color: rgb(233, 233, 233);
   transform: rotateZ(-15deg);
-  transition: transform 0.2s ease-in-out;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
-.more-links img:hover {
+.author-img-placeholder:hover {
   transform: rotateZ(0deg);
   transition: transform 0.2s ease-in-out;
-}
-
-.more-links img:not(.top-author-img) {
-  max-width: 75px;
-  max-height: 75px;
 }
 
 .more-links .top-author-img {
   width: 200px;
   height: 200px;
+  border: 5px solid rgb(128, 128, 128);
+  border-radius: 8px;
+  background-color: rgb(233, 233, 233);
+  margin-right: 40px;
 }
 
 .top-author,
@@ -521,18 +577,13 @@ nav button:active {
 .author-5,
 .author-6 {
   display: flex;
+  justify-content: flex-start;
 }
 
 .more-links-grid h1 {
   font-size: 3.5rem;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
-}
-
-.top-author p {
-  font-size: 2.2rem;
-  line-height: 3.5rem;
-  margin-top: 30px;
 }
 
 .right-content h4,
@@ -546,11 +597,12 @@ nav button:active {
   line-height: 3rem;
   font-weight: 400;
   color: rgb(82, 82, 82);
+  width: 90%;
 }
 
 .featured-book {
   background-color: rgb(49, 49, 49);
-  color: #fff;
+  color: lightgray;
   position: relative;
 }
 
@@ -562,6 +614,7 @@ nav button:active {
   top: -100px;
   transform: rotateZ(-15deg);
   transition: transform 0.3s ease-in-out;
+  background-color: lightgray;
 }
 
 .feature-book-img:hover {
@@ -570,12 +623,15 @@ nav button:active {
 }
 
 .featured-book h3 {
-  color: #fff;
   font-size: 1.7rem;
   line-height: 1.9rem;
   font-weight: 400;
   text-transform: uppercase;
   padding-bottom: 20px;
+  background-color: lightgray;
+  color: lightgray;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .featured-book h1 {
@@ -583,14 +639,10 @@ nav button:active {
   line-height: 5.7rem;
   font-weight: 700;
   padding-bottom: 40px;
-}
-
-.featured-book p {
-  max-width: 65%;
-  font-size: 2.2rem;
-  line-height: 3.7rem;
-  font-weight: 400;
-  padding-bottom: 50px;
+  background-color: rgb(235, 235, 235);
+  color: rgb(235, 235, 235);
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .smashing-guide {
@@ -685,24 +737,6 @@ nav button:active {
   align-self: flex-start;
 }
 
-.email,
-.email form,
-.email form input {
-  width: 100%;
-}
-
-.email form input {
-  padding: 25px 20px;
-  border: none;
-  background-image: linear-gradient(
-    to right,
-    rgb(187, 187, 187) 70%,
-    rgb(116, 116, 116) 70%
-  );
-  margin-bottom: 40px;
-  border-radius: 10px;
-}
-
 .email-bottom-text {
   align-self: center;
   width: 65%;
@@ -720,14 +754,14 @@ footer {
   padding: 65px;
 }
 
-footer h3 {
-  font-size: 1.6rem;
-  line-height: 4.3rem;
-  font-weight: 700;
-  margin-bottom: 60px;
-  display: inline-block;
+.sitemap > li {
+  display: inline;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 400;
   background-color: rgb(223, 223, 223);
   color: rgb(223, 223, 223);
+  margin: 10px;
 }
 
 footer .footer-topics > li {
@@ -744,25 +778,6 @@ footer .footer-topics > li {
   margin-bottom: 90px;
 }
 
-footer > p {
-  display: inline-block;
-  font-size: 1.8rem;
-  line-height: 3rem;
-  font-weight: 400;
-  background-color: #fff;
-  margin: 10px 0;
-}
-
 .sitemap {
   margin-top: 30px;
-}
-
-.sitemap > li {
-  display: inline;
-  font-size: 1.8rem;
-  line-height: 3rem;
-  font-weight: 400;
-  background-color: rgb(223, 223, 223);
-  color: rgb(223, 223, 223);
-  margin: 10px;
 }
