@@ -27,19 +27,20 @@ nav {
 
 .nav-links {
   padding: 13px 15px;
-  background-color: transparent;
+  background-color: rgb(124, 124, 124);
   border-radius: 6px;
 }
 
+/* 
 .nav-links:hover {
   background-color: rgb(124, 124, 124);
-}
+} */
 
 nav a,
 button {
   font-size: 20px;
   text-decoration: none;
-  color: white;
+  color: transparent;
 }
 
 nav .logo {
@@ -54,14 +55,14 @@ nav button {
   align-items: center;
   justify-content: space-between;
   border: none;
-  color: white;
+  color: transparent;
   border-radius: 6px;
   box-shadow: 0 4px 4px 4px rgba(68, 68, 68, 0.7);
 }
 
-nav button:hover {
+/* nav button:hover {
   background-color: rgb(109, 109, 109);
-}
+} */
 
 nav button img {
   margin-left: 0.4em;
@@ -80,6 +81,7 @@ nav .serchbar {
   padding: 12px 12px 14px 48px;
   font-size: 20px;
   border-radius: 8px;
+  color: white;
 }
 
 .serchbar input:active,
@@ -95,6 +97,7 @@ nav button:active {
   margin-right: -40px;
   z-index: 10;
   color: rgb(78, 78, 78);
+  background-color: rgb(78, 78, 78);
 }
 
 /* main */
@@ -109,6 +112,7 @@ nav button:active {
   margin-left: 15px;
   font-size: 1.4rem;
   color: rgb(224, 224, 224);
+  background-color: rgb(224, 224, 224);
   font-weight: 400;
 }
 
@@ -168,17 +172,20 @@ nav button:active {
 
 .article-item li a {
   font-size: 2rem;
-  color: white;
+  color: rgb(202, 202, 202);
+  background-color: rgb(202, 202, 202);
   text-decoration: none;
 }
 
 .article-item li i {
   font-size: 1.8rem;
+  background-color: rgb(39, 39, 39);
   color: rgb(39, 39, 39);
 }
 
 .article-tag-count {
-  color: inherit;
+  color: rgb(202, 202, 202);
+  background-color: rgb(202, 202, 202);
   font-weight: 500;
   font-size: 1.2rem;
   position: relative;
@@ -191,20 +198,20 @@ nav button:active {
   line-height: 57px;
   font-weight: 700;
   text-decoration: none;
-}
-
-.article-item h1 > a:visited {
-  color: #fff;
+  background-color: rgb(219, 219, 219);
+  color: rgb(219, 219, 219);
 }
 
 .arrow {
+  background-color: #fff;
   color: #fff;
-  font-size: 40px;
+  font-size: 20px;
   margin-top: 100px;
   margin-bottom: 100px;
+  width: 100px;
 }
 
-.latest-article-section img {
+/* .latest-article-section img {
   max-width: 70px;
   max-height: 70px;
   border: 5px solid #fff;
@@ -213,9 +220,20 @@ nav button:active {
   display: block;
   transform: rotateZ(-15deg);
   transition: transform 0.2s ease-out;
+  background-color: lightgray;
+} */
+
+.img-placeholder {
+  width: 70px;
+  height: 70px;
+  border: 5px solid rgb(128, 128, 128);
+  border-radius: 8px;
+  background-color: rgb(233, 233, 233);
+  transform: rotateZ(-15deg);
 }
 
-.article-item img:hover {
+/* .article-item img:hover, */
+.img-placeholder:hover {
   transform: rotateZ(0deg);
 }
 
@@ -230,6 +248,7 @@ nav button:active {
   font-size: 22px;
   font-weight: 700;
   margin-left: 20px;
+  background-color: white;
 }
 
 .latest-article-section span {
@@ -253,6 +272,10 @@ nav button:active {
 }
 .sect-2-top > p:nth-child(1) {
   text-transform: uppercase;
+  background-color: rgb(148, 148, 148);
+  color: rgb(148, 148, 148);
+  display: inline-block;
+  margin-bottom: 15px;
 }
 
 .sect-2-top > p:nth-child(2) {
@@ -261,23 +284,31 @@ nav button:active {
   font-weight: 700;
   padding-top: 10px;
   color: rgb(68, 68, 68);
+  background-color: rgb(68, 68, 68);
 }
 
 .sect-2-top h3 {
   padding: 18px 0;
   font-size: 18px;
   color: #777;
+  background-color: #777;
   line-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .sect-2-top > p:nth-child(4) {
   font-size: 22px;
   line-height: 36px;
+  color: rgb(122, 122, 122);
+  background-color: rgb(122, 122, 122);
 }
 
 .arrow2 {
-  font-size: 40px;
+  font-size: 20px;
   color: #121;
+  background-color: #121;
+  width: 100px;
   bottom: 20px;
 }
 
@@ -302,13 +333,22 @@ nav button:active {
   height: 700px;
 }
 
-.feature-ad img {
+.featured-ad-img {
+  width: 30%;
+  height: 35%;
+  border-radius: 100%;
+  background-color: lightgray;
+}
+
+/* .feature-ad img {
   width: 30%;
   height: auto;
-}
+} */
 
 .feature-ad h1 {
   font-size: 4rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .feature-ad h1,
@@ -321,11 +361,14 @@ nav button:active {
   text-align: center;
   width: 550px;
   line-height: 3rem;
+  background-color: rgb(212, 212, 212);
+  color: rgb(212, 212, 212);
 }
 
 .common-btn {
   background-color: #f6f3f2;
-  color: rgb(58, 57, 57);
+  color: rgb(136, 136, 136);
+  background-color: rgb(136, 136, 136);
   padding: 15px 30px;
   border-radius: 10px;
   font-weight: bold;
@@ -337,11 +380,14 @@ nav button:active {
   font-size: 1.6rem;
   letter-spacing: 0.3rem;
   margin-top: -60px;
+  color: white;
+  background-color: white;
 }
 
 .feature-ad small a {
   font-size: 1.6rem;
-  color: white;
+  color: rgb(219, 219, 219);
+  background-color: rgb(219, 219, 219);
 }
 
 .article-sec-3 article {
