@@ -12,31 +12,6 @@ body {
   background-color: #f6f3f2;
 }
 
-h1 {
-  font-size: 4rem;
-  line-height: 5rem;
-}
-
-h2 {
-  font-size: 3rem;
-  line-height: 4.5rem;
-}
-
-h3 {
-  font-size: 2.5rem;
-  line-height: 3.5rem;
-}
-
-h4 {
-  font-size: 2.2rem;
-  line-height: 3.5rem;
-}
-
-p {
-  font-size: 1.8rem;
-  line-height: 3rem;
-}
-
 nav {
   height: 100px;
   background-color: rgb(58, 58, 58);
@@ -582,6 +557,9 @@ footer > p {
 
 .more-links-grid h1 {
   font-size: 3.5rem;
+  background-color: rgb(53, 53, 53);
+  color: rgb(53, 53, 53);
+  display: inline-block;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
@@ -590,13 +568,16 @@ footer > p {
 .right-content h4 a {
   font-size: 1.8rem;
   color: rgb(110, 110, 110);
+  background-color: rgb(110, 110, 110);
+  display: inline-block;
 }
 
 .author-info {
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 3.5rem;
   font-weight: 400;
   color: rgb(82, 82, 82);
+  background-color: rgb(82, 82, 82);;
   width: 90%;
 }
 
