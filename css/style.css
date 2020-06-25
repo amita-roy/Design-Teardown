@@ -178,6 +178,10 @@ nav button:active {
   text-align: center;
 }
 
+.article-item h2 {
+  display: none;
+}
+
 .article-item ul {
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +220,7 @@ nav button:active {
   color: rgb(39, 39, 39);
 }
 
-.article-item h1 > a {
+.article-item p > a {
   font-size: 48px;
   line-height: 57px;
   font-weight: 700;
