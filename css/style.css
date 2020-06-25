@@ -314,6 +314,8 @@ footer > p {
   font-size: 2.2rem;
   line-height: 3.5rem;
   margin-top: 30px;
+  background-color: rgb(85, 85, 85);
+  color: rgb(85, 85, 85);
 }
 
 .featured-book p {
