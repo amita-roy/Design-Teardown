@@ -25,7 +25,7 @@ nav {
   border-radius: 6px;
 }
 
-nav div,
+nav a,
 button {
   font-size: 2rem;
   text-decoration: none;
