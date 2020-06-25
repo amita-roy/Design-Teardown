@@ -10,12 +10,6 @@ body {
   background-color: #f6f3f2;
 }
 
-.lastest-article,
-.sect-2-top > p:nth-child(2),
-.next-page a {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 nav {
   height: 100px;
   background-color: rgb(88, 88, 88);
@@ -397,20 +391,22 @@ nav button:active {
 }
 
 .next-page {
+  
   text-align: center;
   background-color: #f6f3f2;
   padding: 100px 0;
+  
 }
 
 .next-page a {
   text-decoration: none;
-  color: #121;
+  color: rgb(70, 70, 70);
   font-size: 1.7rem;
   line-height: 1.9rem;
   font-weight: 400;
   text-transform: uppercase;
   padding-bottom: 10px;
-  border-bottom: 3px solid #121;
+  border-bottom: 3px solid #121;background-color:rgb(70, 70, 70);
 }
 
 .shipping-info {
@@ -676,7 +672,7 @@ footer {
   color: #fff;
   background-color: rgb(49, 49, 49);
   text-align: center;
-  padding: 50px;
+  padding: 65px;
 }
 
 footer h3 {
@@ -689,11 +685,35 @@ footer h3 {
 
 }
 
-footer ul > li {
+footer .footer-topics > li {
   display: inline-block;
   margin: 10px 10px ;
   font-size: 2.7rem;
   line-height: 4.4rem;
   font-weight: 400;
   background-color: #fff;
+}
+
+.footer-topics {
+  margin-bottom: 90px;
+}
+
+footer > p {
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+  font-weight: 400;
+  background-color: #fff;
+  margin: 10px 0;
+
+}
+
+.sitemap > li {
+  display: inline;
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+  font-weight: 400;
+  background-color: #fff;
+  margin: 10px;
+
 }
