@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -581,7 +579,7 @@ footer > p {
   line-height: 3.5rem;
   font-weight: 400;
   color: rgb(82, 82, 82);
-  background-color: rgb(82, 82, 82);;
+  background-color: rgb(82, 82, 82);
   width: 90%;
 }
 
