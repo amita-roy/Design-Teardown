@@ -671,3 +671,29 @@ nav button:active {
   background-color: #fff;
   border-radius: 10px;
 }
+
+footer {
+  color: #fff;
+  background-color: rgb(49, 49, 49);
+  text-align: center;
+  padding: 50px;
+}
+
+footer h3 {
+  font-size: 1.6rem;
+  line-height: 4.3rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  display: inline-block;
+  background-color: #fff;
+
+}
+
+footer ul > li {
+  display: inline-block;
+  margin: 10px 10px ;
+  font-size: 2.7rem;
+  line-height: 4.4rem;
+  font-weight: 400;
+  background-color: #fff;
+}
